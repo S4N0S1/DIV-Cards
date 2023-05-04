@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIV CARDS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<style>
+  h1{
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 0px;
+  }
+  p{
+    font-family: 'Orbitron', sans-serif;
+  }
+  .div-1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+  }
+  .div-2{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  span{
+    color: purple;
+    text-shadow: 0px 0px 2px purple;
+  }
+  .pfp{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px;
+    border-radius: 100px;
+  }
+  .pfp-name{
+    color: white;
+  }
+  .collection{
+    font-size: 15px;
+    background-color: white;
+    color: blueviolet;
+    border-style: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, padding-left 0.2s, padding-right 0.2s;
+  }
+  .collection:hover{
+    background-color: black;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .info-card{
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .first-name{
+            font-size: 15px;
+            padding: 10px;
+            border-radius: 10px;
+            border-width: 1px;
+            border-style: solid;
+        }
+        .last-name{
+            font-size: 15px;
+            padding: 10px;
+            border-radius: 10px;
+            border-width: 1px;
+            border-style: solid;
+        }
+        .email{
+            display: block;
+            margin-top: 5px;
+            padding-right: 230px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-size: 15px;
+            border-radius: 10px;
+            border-width: 1px;
+            border-style: solid;
+        }
+        .sign-up{
+            display: block;
+            margin-top: 5px;
+            padding-right: 150px;
+            padding-left: 150px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-size: 30px;
+            border-radius: 10px;
+            border-width: 1px;
+            font-family: 'Orbitron', sans-serif;
+            border-style: none;
+            background-color:white;
+            color: blueviolet;
+            transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+        .sign-up:hover{
+            color: white;
+            background-color: black;
+            box-shadow: 0px 0px 5px blueviolet;
+        }
+        .sign-card{
+          background-color: blueviolet;
+          border: none;
+          border-radius: 5px;
+          display: inline-block;
+          padding: 20px;
+          text-align:left;
+        }
+</style>
+</head>
+<body>
+  <h1>
+    GET YOUR OWN <span>	&lt;DIV&gt;</span> CARD!
+  </h1>
+  <p class="div-1">
+    With the help of the <span>	&lt;DIV&gt;</span> element, we can make you a nice-looking info card!
+  </p>
+  <p class="div-1">Each card has its own area thanks to the <span>&lt;DIV	&gt;</span> element!</p>
+  <div class="info-card">
+    <img class="pfp" src="div1.jpg" alt="Simon Riley aka Ghost">
+    <p class="pfp-name">
+      Simon &#34;Ghost&#34; Riley
+    </p>
+    <p class="pfp-name">
+      Death Stare
+    </p>
+    <button class="collection">
+      Add to Collection
+    </button>
+  </div>
+  <div class="info-card">
+    <img class="pfp" src="div2.webp" alt="Dwayne Johnson">
+    <p class="pfp-name">
+      Dwane &#34;The Rock&#34; Johnson
+    </p>
+    <p class="pfp-name">
+      Eyebrow Raise
+    </p>
+    <button class="collection">
+      Add to Collection
+    </button>
+  </div>
+  <div class="info-card">
+    <img class="pfp" src="div3.jpg" alt="Dwayne Johnson">
+    <p class="pfp-name">
+      Saul Goodman
+    </p>
+    <p class="pfp-name">
+      Its all good
+    </p>
+    <button class="collection">
+      Add to Collection
+    </button>
+  </div>
+  <p></p>
+  <div class="sign-card">
+    <p class="div-2">
+      SIGN UP AND GET YOUR OWN!
+    </p>
+    <input class="first-name" type="textbox" placeholder="First Name">
+    <input class="last-name" type="textbox" placeholder="Last Name">
+    <input class="email" type="textbox" placeholder="Email">
+    <button class="sign-up">SIGN UP</button>
+  </div>
+</body>
+</html>
